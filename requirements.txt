@@ -1,0 +1,19 @@
+# Core training
+torch>=2.1.0
+transformers>=4.44.0
+datasets>=2.18.0
+accelerate>=0.30.0
+peft>=0.11.0            # +LoRA baseline
+nltk>=3.8               # sentence splitting for DiSC
+
+# Inference / evaluation
+vllm>=0.6.0
+lm-eval[vllm]>=0.4.3    # general capability benchmarks
+
+# Data + analysis
+pandas>=2.0.0
+numpy>=1.24.0
+tqdm>=4.66.0
+
+# Optional: BioASQ multiple-choice construction (scripts/build_bioasq_mcq.py)
+openai>=1.40.0
